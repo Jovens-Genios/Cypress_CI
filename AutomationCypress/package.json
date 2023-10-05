@@ -1,0 +1,21 @@
+{
+  "name": "automationcypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node_modules\\.bin\\cypress run",
+    "runtests": "npm run test --",
+    "build":"npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.12.1"
+  },
+  "dependencies": {
+    "mocha": "^10.1.0"
+  }
+}
