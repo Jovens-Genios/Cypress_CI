@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node_modules\\.bin\\cypress run",
-    "runtests": "npm run test --",
-    "build":"npm run build"
+    "build": "rollup -c",
+    "start": "http-server",
+    "test" : "cypress run",
+    "cypress:open":"cypress open",
+    "cypress:run":"cypress run",
+    "cypress:record":"cypress run --run --key"
   },
   "keywords": [],
   "author": "",
