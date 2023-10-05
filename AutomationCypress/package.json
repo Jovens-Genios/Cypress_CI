@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rollup -c",
+    "build": "npm run build",
     "start": "node app.js",
     "test" : "cypress run",
     "cypress:open":"cypress open",
