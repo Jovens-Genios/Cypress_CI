@@ -10,7 +10,7 @@ describe('template spec', () => {
 
   it('CT002 - O nome da Tarefa deverá conter 4 ou mais caracteres', () => {
 
-        cy.visit(mt.Url)
+        cy.visit("https://dev-educadores.jovensgenios.com/login")
     
     });
   //.........................................................................................................................
