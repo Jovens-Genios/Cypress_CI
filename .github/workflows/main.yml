@@ -9,4 +9,4 @@ jobs:
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
-        uses: cypress-io/github-action@v6
+        uses: https://github.com/Bruno621/Cypress_CI/tree/main/Testes_Regressivos_Jovens_Genios@1
