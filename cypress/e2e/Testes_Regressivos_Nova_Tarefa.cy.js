@@ -18,6 +18,9 @@ describe('template spec', () => {
     
       //Nova Atividade
     cy.visit("https://dev-educadores.jovensgenios.com/criar");
+
+    //Nova Tarefa
+    cy.get(po.ID_Nova_Tarefa).click();
 });
 
   
