@@ -16,11 +16,14 @@ describe('template spec', () => {
     cy.get(po.ID_Botao).click();
     cy.wait(5000);
     
-      //Nova Atividade
+    //Nova Atividade
     cy.visit("https://dev-educadores.jovensgenios.com/criar");
 
     //Nova Tarefa
-    cy.get(po.ID_Nova_Tarefa).click();
+    cy.visit("https://dev-educadores.jovensgenios.com/atividades/ASSIGNMENT");
+
+    //fechar Mensagem
+    cy.get(po.ID_Fechar_Mensagem).click();
 });
 
   
