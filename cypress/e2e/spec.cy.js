@@ -6,8 +6,8 @@ describe('template spec', () => {
         cy.visit("https://dev-educadores.jovensgenios.com/login")
     
         //Login
-        cy.get("[data-cy=email]").type(mt.Usuario)
-        cy.get("[data-cy=password]").type(mt.Senha)
+        cy.get("[data-cy=email]").type("educadortesteqa@jovensgenios.com")
+        cy.get("[data-cy=password]").type("jovensgenios")
         cy.get(".v-btn__content > .row > .d-flex").click()
     
         //Nova Atividade
