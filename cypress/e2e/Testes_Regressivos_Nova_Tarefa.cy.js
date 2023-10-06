@@ -18,12 +18,15 @@ describe('template spec', () => {
     
     //Nova Atividade
     cy.visit("https://dev-educadores.jovensgenios.com/criar");
+    cy.wait(5000);
 
     //Nova Tarefa
     cy.visit("https://dev-educadores.jovensgenios.com/atividades/ASSIGNMENT");
+    cy.wait(5000);
 
     //fechar Mensagem
     cy.visit("https://dev-educadores.jovensgenios.com/atividades/tarefa/criar?step=1");
+    cy.wait(5000);
 
     /Nome da atividade
     cy.get('[data-cy=input-activity-name]').type("ATIVIDADE 1");
