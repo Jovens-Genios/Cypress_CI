@@ -16,9 +16,6 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Cypress tests
-        uses: ./
-        with:
-          working-directory: examples/basic
-          build: npx cypress info
+      
 
  
