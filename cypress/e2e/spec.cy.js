@@ -3,7 +3,7 @@ describe('template spec', () => {
   //.........................................................................................................................
     it('CT001 - Se a escola estiver dentro do período de Olimpíadas, deverá aparecer a mensagem de aviso', () => {
 
-        cy.visit(mt.Url)
+        cy.visit("https://dev-educadores.jovensgenios.com/login")
     
         //Login
         cy.get("[data-cy=email]").type(mt.Usuario)
