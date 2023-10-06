@@ -29,7 +29,7 @@ describe('template spec', () => {
     cy.wait(5000);
 
     //Nome da atividade
-    cy.get('[data-cy=input-activity-name]').type("ATIVIDADE 1");
+    cy.get('[data-cy="input-activity-name"]').type("xxx");
 
 });
 
