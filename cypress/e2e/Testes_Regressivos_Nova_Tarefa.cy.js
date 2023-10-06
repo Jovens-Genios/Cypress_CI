@@ -25,7 +25,7 @@ describe('template spec', () => {
     cy.wait(5000);
 
     //fechar Mensagem
-    cy.visit("https://dev-educadores.jovensgenios.com/atividades/tarefa/criar?step=1");
+    cy.visit("https://dev-educadores.jovensgenios.com/atividades/tarefa/criar?step=1",{timeout:10000});
     cy.wait(8000);
 
     //Nome da atividade
