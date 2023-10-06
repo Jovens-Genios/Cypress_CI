@@ -17,8 +17,7 @@ describe('template spec', () => {
     cy.wait(5000);
     
     //Nova Atividade
-    cy.contains('Criar nova atividade').click();
-
+    cy.get('[data-cy="home-create"] > .row > .iconHolder')click();
 });
 
   
