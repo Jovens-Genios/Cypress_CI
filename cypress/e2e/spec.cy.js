@@ -5,21 +5,16 @@ describe('template spec', () => {
 
         cy.visit("https://dev-educadores.jovensgenios.com/login")
     
-        //Login
-        cy.get("[data-cy=email]").type("educadortesteqa@jovensgenios.com")
-        cy.get("[data-cy=password]").type("jovensgenios")
-        cy.get(".v-btn__content > .row > .d-flex").click()
-    
-        //Nova Atividade
-        cy.get("[data-cy=home-create] > .row > .iconHolder").click()
-    
-        //Nova Tarefa
-        cy.get("[data-cy=TAREFA] > .rounded-lg").click();
-    
-        //fechar Mensagem
-        cy.get(".pt-9 > :nth-child(2) > .v-btn").click();
-    
-        cy.get('zzz').should("be.visible");
     });
+  //.........................................................................................................................
+
+  it('CT002 - O nome da Tarefa deverá conter 4 ou mais caracteres', () => {
+
+        cy.visit(mt.Url)
+    
+    });
+  //.........................................................................................................................
+
+
   
 })
