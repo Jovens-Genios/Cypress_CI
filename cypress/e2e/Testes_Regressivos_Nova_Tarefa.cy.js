@@ -23,7 +23,7 @@ describe('template spec', () => {
     cy.visit("https://dev-educadores.jovensgenios.com/atividades/ASSIGNMENT");
 
     //fechar Mensagem
-    cy.get(po.ID_Fechar_Mensagem).click();
+    cy.visit("https://dev-educadores.jovensgenios.com/atividades/tarefa/criar?step=1");
 });
 
   
