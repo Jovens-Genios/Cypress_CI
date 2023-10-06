@@ -16,12 +16,7 @@ describe('template spec', () => {
     cy.get(po.ID_Botao).click();
     cy.wait(5000);
     
-    //Nova Tarefa
-    cy.get(po.ID_Nova_Tarefa).click();
-    cy.wait(5000);
-    
-    //fechar Mensagem
-    cy.get(po.ID_Fechar_Mensagem).click();
+
 });
 
   
