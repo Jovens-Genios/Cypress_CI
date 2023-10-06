@@ -24,6 +24,10 @@ describe('template spec', () => {
 
     //fechar Mensagem
     cy.visit("https://dev-educadores.jovensgenios.com/atividades/tarefa/criar?step=1");
+
+    /Nome da atividade
+    cy.get('[data-cy=input-activity-name]').type("ATIVIDADE 1");
+
 });
 
   
