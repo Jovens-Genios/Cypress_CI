@@ -22,5 +22,7 @@ describe('template spec', () => {
     
     //fechar Mensagem
     cy.get(po.ID_Fechar_Mensagem).click();
+});
 
+  
 })
