@@ -16,6 +16,8 @@ describe('template spec', () => {
     cy.get(po.ID_Botao).click();
     cy.wait(5000);
     
+    //Nova Atividade
+    cy.contains('Criar nova atividade').click();
 
 });
 
