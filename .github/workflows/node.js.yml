@@ -1,16 +1,15 @@
-name: Test in Docker
+name: End-to-end tests
 on: push
 jobs:
   cypress-run:
-    runs-on: ubuntu-22.04
-    # Cypress Docker image from https://hub.docker.com/r/cypress
-    # with browsers pre-installed
-    container:
-      image: cypress/browsers:latest
-      options: --user 1001
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: cypress-io/github-action@v6
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v4
         with:
           browser: chrome
 
