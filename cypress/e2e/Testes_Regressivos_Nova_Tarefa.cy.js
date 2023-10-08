@@ -17,6 +17,7 @@ describe('template spec', () => {
     cy.xpath('/html/body/div[8]/div/div[1]/main/div/div[1]/div/div/div/div[7]/button/span/div/div/span').click()
         cy.wait(5000)
 
+       cy.get('iframe[id="Your project:Test Project"]')
         cy.xpath('/html/body/div[8]/div[2]/div[1]/main/div/main/div/div/div[1]/div[2]/div[1]/div').click()
 
     
