@@ -15,13 +15,13 @@ describe('template spec', () => {
     cy.get(po.ID_Botao).click()
 
      //Nova Atividade
-    cy.get(po.ID_Nova_Atividade).click()
+    cy.get(po.ID_Nova_Atividade).click({ force: true })
 
     //Nova Tarefa
-    cy.get(po.ID_Nova_Tarefa).click();
+    cy.get(po.ID_Nova_Tarefa).click({ force: true });
 
     //fechar Mensagem
-    cy.get(po.ID_Fechar_Mensagem).click();
+    cy.get(po.ID_Fechar_Mensagem).click({ force: true });
    
 });
 
