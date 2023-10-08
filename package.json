@@ -4,11 +4,12 @@
   "description": "Testes automatizados com Workflow",
   "main": "index.js",
   "scripts": {
-   "test": "cypress run"
+    "test": "cypress run"
   },
   "author": "Bruno Dantas (Auditeste)",
   "license": "ISC",
   "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
     "cypress": "^13.3.0"
   }
 }
