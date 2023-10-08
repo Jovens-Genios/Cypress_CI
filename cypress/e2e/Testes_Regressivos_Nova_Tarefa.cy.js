@@ -16,7 +16,7 @@ describe('template spec', () => {
     cy.xpath('/html/body/div[8]/div/div[1]/main/div/div[1]/div/div/div/div[4]/div/div/div[1]/div[1]/input').type("jovensgenios")
     cy.xpath('/html/body/div[8]/div/div[1]/main/div/div[1]/div/div/div/div[7]/button/span/div/div/span').click()
     
-    cy.xpath('//html/body/div[8]/div/div[1]/main/div/main/div/div/div[1]/div[2]/div[1]/div/div/span').click()
+    cy.xpath('/html/body/div[8]/div/div[1]/main/div/main/div/div/div[1]/div[2]/div[1]/div/div/span').click()
     
     //cy.get(po.ID_Senha).type(mt.Senha)
     //cy.get(po.ID_Botao).click()
