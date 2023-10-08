@@ -17,6 +17,7 @@ describe('template spec', () => {
     cy.xpath('/html/body/div[8]/div/div[1]/main/div/div[1]/div/div/div/div[7]/button/span/div/div/span').click()
     
 
+    cy.iframe('[id="Your project: 'Test Project'"]').find('[data-cy="home-create"] > .row > .fs-18').click()
     cy.xpath('/html/body/div[8]/div/div[1]/main/div/main/div/div/div[1]/div[2]/div[1]/div/div/span').click()
     
     //cy.xpath('/html/body/div[8]/div/div[1]/main/div/div[1]/section/div/div[2]/div/div/div[3]/div/img').click()
