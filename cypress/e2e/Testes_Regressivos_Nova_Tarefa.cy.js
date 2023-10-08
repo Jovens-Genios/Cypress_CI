@@ -12,8 +12,8 @@ describe('template spec', () => {
     cy.visit(mt.Url)
 
     //Login
-    cy.xpath('//*[@id="input-15"]').type("educadortesteqa@jovensgenios.com")
-    cy.xpath('//*[@id="input-18"]').type("jovensgenios")
+    cy.xpath('/html/body/div[8]/div/div[1]/main/div/div[1]/div/div/div/div[3]/div/div/div[1]/div/input').type("educadortesteqa@jovensgenios.com")
+    cy.xpath('/html/body/div[8]/div/div[1]/main/div/div[1]/div/div/div/div[4]/div/div/div[1]/div[1]/input').type("jovensgenios")
     cy.xpath('//*[@id="base"]/div/div[1]/main/div/div[1]/div/div/div/div[7]/button/span/div/div/span').click()
     
     cy.get('Iframe')
