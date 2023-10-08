@@ -1,6 +1,4 @@
 
-
-
 describe('template spec', () => {
 
   const po   = require("../fixtures/PageObject.json");
@@ -8,14 +6,27 @@ describe('template spec', () => {
   
   it('CT013 - Ao clicar em “Editar” o usuário deverá ser direcionado à etapa referida e os dados devem estar preenchidos com o que está sendo apresentado no Resumo.', () => {
 
-cy.visit('https://dev-educadores.jovensgenios.com/atividades/tarefa/criar?step=1');
-cy.get('[data-cy=input-activity-name]').click();
-cy.get('[data-cy=input-activity-name]').type('xxxx');
-cy.get('.v-btn__content > .white--text').click();
-cy.get('[data-cy=school]').click();
+    
+    cy.visit(mt.Url)
 
+    //Login
+    cy.get(po.ID_Usuario).type(mt.Usuario)
+    cy.get(po.ID_Senha).type(mt.Senha)
+    cy.get(po.ID_Botao).click()
 
+    //Nova Atividade
+    cy.visit("https://dev-educadores.jovensgenios.com/criar");
+    
+    //Nova Tarefa
+    cy.visit("https://dev-educadores.jovensgenios.com/atividades/ASSIGNMENT");
+
+    //fechar Mensagem
+    cy.visit("https://dev-educadores.jovensgenios.com/atividades/tarefa/criar?step=1");
+
+    
+    //Nome da atividade
+    cy.get('[data-cy="input-activity-name"]').type("xxxx");
+   
 });
 
-  
 })
