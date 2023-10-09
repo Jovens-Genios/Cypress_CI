@@ -16,7 +16,9 @@ describe('template spec', () => {
         cy.get(po.ID_Usuario).type(mt.Usuario)
         cy.get(po.ID_Senha).type(mt.Senha)
         cy.get(po.ID_Botao).click()
- 
+      
+         cy.get('[data-cy="create"]').click()
+
     
     });
     //.........................................................................................................
