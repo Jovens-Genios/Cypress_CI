@@ -1,7 +1,5 @@
 /// <reference types="cypress"/>
 
-import { describe } from "mocha";
-
 describe('template spec', () => {
 
   const po   = require("../fixtures/PageObject.json");
