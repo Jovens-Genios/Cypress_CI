@@ -10,12 +10,15 @@ describe('template spec', () => {
 
 
    cy.visit(mt.Url)
-
+    
     //Login
     cy.xpath('/html/body/div[8]/div/div[1]/main/div/div[1]/div/div/div/div[3]/div/div/div[1]/div/input').type("educadortesteqa@jovensgenios.com")
     cy.xpath('/html/body/div[8]/div/div[1]/main/div/div[1]/div/div/div/div[4]/div/div/div[1]/div[1]/input').type("jovensgenios")
     cy.xpath('/html/body/div[8]/div/div[1]/main/div/div[1]/div/div/div/div[7]/button/span/div/div/span').click()
+    cy.visit('https://dev-educadores.jovensgenios.com/login')
     cy.get('[data-cy="home-create"] > .row > .fs-18').click()
+
+
     
     //cy.xpath('/html/body/div[8]/div/div[1]/main/div/div[1]/section/div/div[2]/div/div/div[3]/div/img').click()
 
