@@ -1,4 +1,6 @@
+/// <reference types="cypress"/>
 
+import { describe } from "mocha";
 
 describe('template spec', () => {
 
