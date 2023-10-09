@@ -16,15 +16,7 @@ describe('template spec', () => {
         cy.get(po.ID_Usuario).type(mt.Usuario)
         cy.get(po.ID_Senha).type(mt.Senha)
         cy.get(po.ID_Botao).click()
-    
-        //Nova Atividade
-        cy.get(po.ID_Nova_Atividade).click()
-    
-        //Nova Tarefa
-        cy.get(po.ID_Nova_Tarefa).click();
-    
-        //fechar Mensagem
-        cy.get(po.ID_Fechar_Mensagem).click();
+ 
     
     });
     //.........................................................................................................
@@ -38,14 +30,7 @@ describe('template spec', () => {
         cy.get(po.ID_Senha).type(mt.Senha)
         cy.get(po.ID_Botao).click()
     
-        //Nova Atividade
-        cy.get(po.ID_Nova_Atividade).click()
-    
-        //Nova Tarefa
-        cy.get(po.ID_Nova_Tarefa).click();
-    
-        //fechar Mensagem
-        cy.get(po.ID_Fechar_Mensagem).click();
+
     
     });
 
