@@ -13,7 +13,7 @@ describe('template spec', () => {
         cy.visit(mt.Url)
     
         //Login
-        cy.get(po.ID_Usuario).type(mt.Usuario)
+        cy.get(po.ID_Usuario).type(mt.Usuario);
         cy.get(po.ID_Senha).type(mt.Senha)
         cy.get(po.ID_Botao).click()
       
