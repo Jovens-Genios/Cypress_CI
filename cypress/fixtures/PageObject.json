@@ -2,7 +2,7 @@
     "ID_Usuario"        : "[data-cy=email]",
     "ID_Senha"          : "[data-cy=password]",
     "ID_Botao"          : ".v-btn__content > .row > .d-flex",
-    "ID_Nova_Atividade" : "//*[@id='base']/div/div[1]/main/div/main/div/div/div[1]/div[2]/div[1]/div/div/span",
+    "ID_Nova_Atividade" : "[data-cy='home-create'] > .row > .fs-18",
     "ID_Nova_Tarefa"    : "[data-cy=TAREFA] > .rounded-lg",
     "ID_Fechar_Mensagem": ".pt-9 > :nth-child(2) > .v-btn"
     
