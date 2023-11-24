@@ -7,7 +7,7 @@
     "ID_Fechar_Mensagem": ".pt-9 > :nth-child(2) > .v-btn",
     "ID_Proximo"        :  "[data-cy=btn-next]",
     "Id_poderes"        :   ".mt-10 > :nth-child(1) > .v-input > .v-input__control > .v-input__slot > .v-input--selection-controls__input > .v-input--selection-controls__ripple",
-    "Id_Recado "        : "[data-cy=tiny-message] > .tox",
+    "Id_Recado"         : "[data-cy=tiny-message] > .tox",
     "Id_Anti_Cola"      : ".pt-5 > :nth-child(1) > .v-input > .v-input__control > .v-input__slot > .v-input--selection-controls__input > .v-input--selection-controls__ripple",
     "Id_Aumenta_Pontuação" : ".mt-16 > .d-flex > .number-input > :nth-child(4) > .iconify",
     "Id_Terceiro_ano"      : ":nth-child(3) > .v-btn__content > .py-1",
